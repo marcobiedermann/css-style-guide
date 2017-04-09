@@ -106,9 +106,9 @@ Stylelint: [`font-family-name-quotes`](https://stylelint.io/user-guide/rules/fon
 
 ---
 
-Bad
-
 Font-weight notation must be written in numeric value.
+
+Bad
 
 ```css
 body {
