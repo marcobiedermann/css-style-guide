@@ -16,6 +16,7 @@ A styleguide which helps you write better, performant, structured, scalable and 
 	* [Time](#time)
 	* [Unit](#unit)
 	* [Value](#value)
+	* [Property](#property)
 
 ## CSS
 
@@ -327,3 +328,47 @@ body {
 ```
 
 Stylelint: [`value-no-vendor-prefix`](https://stylelint.io/user-guide/rules/value-no-vendor-prefix/)
+
+### Property
+
+Property must be written in lowercase.
+
+Bad
+
+```css
+body {
+  Margin: 0;
+}
+```
+
+Good
+
+```css
+body {
+  margin: 0;
+}
+```
+
+Stylelint: [`property-case`](https://stylelint.io/user-guide/rules/property-case/)
+
+---
+
+Vender prefixes must not be used in property name. Use [Autoprefixer](https://github.com/postcss/autoprefixer) to add them depending on browser support.
+
+Bad
+
+```css
+body {
+  -webkit-transform: scale(1);
+}
+```
+
+Good
+
+```css
+body {
+  transform: scale(1);
+}
+```
+
+Stylelint: [`property-no-vendor-prefix`](https://stylelint.io/user-guide/rules/property-no-vendor-prefix/)
