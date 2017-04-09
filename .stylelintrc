@@ -8,6 +8,10 @@
     "font-family-name-quotes": "always-where-recommended",
     "font-family-no-duplicate-names": true,
 
-    "font-weight-notation": "numeric"
+    "font-weight-notation": "numeric",
+
+    "number-leading-zero": "always",
+    "number-max-precision": 3,
+    "number-no-trailing-zeros": true
   }
 }

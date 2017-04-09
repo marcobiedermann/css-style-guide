@@ -10,6 +10,7 @@ A styleguide which helps you write better, performant, structured, scalable and 
 * [CSS](#css)
 	* [Color](#color)
 	* [Font](#font)
+	* [Number](#number)
 
 ## CSS
 
@@ -122,3 +123,69 @@ body {
 ```
 
 Stylelint: [`font-weight-notation`](https://stylelint.io/user-guide/rules/font-weight-notation/)
+
+### Number
+
+Number must never have a leading zero.
+
+Bad
+
+```css
+body {
+  font-size: .875rem;
+}
+```
+
+Good
+
+```css
+body {
+  font-size: 0.875rem;
+}
+```
+
+Stylelint: [`number-leading-zero`](https://stylelint.io/user-guide/rules/number-leading-zero/)
+
+---
+
+Number decimal precision must be limited to three.
+
+Bad
+
+```css
+.column {
+  width: 66.6667%;
+}
+```
+
+Good
+
+```css
+.column {
+  width: 66.667%;
+}
+```
+
+Stylelint: [`number-max-precision`](https://stylelint.io/user-guide/rules/number-max-precision/)
+
+---
+
+Number must not have a trailing zero.
+
+Bad
+
+```css
+.body {
+  font-size: 1.0rem;
+}
+```
+
+Good
+
+```css
+.body {
+  font-size: 1rem;
+}
+```
+
+Stylelint: [`number-no-trailing-zeros`](https://stylelint.io/user-guide/rules/number-no-trailing-zeros/)
