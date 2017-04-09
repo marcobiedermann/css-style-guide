@@ -12,6 +12,7 @@ A styleguide which helps you write better, performant, structured, scalable and 
 	* [Font](#font)
 	* [Number](#number)
 	* [String](#string)
+	* [Length](#length)
 
 ## CSS
 
@@ -212,3 +213,25 @@ Good
 ```
 
 Stylelint: [`string-quotes`](https://stylelint.io/user-guide/rules/string-quotes/)
+
+### Length
+
+Number with zero length must not have units.
+
+Bad
+
+```css
+body {
+  margin: 0px;
+}
+```
+
+Good
+
+```css
+body {
+  margin: 0;
+}
+```
+
+Stylelint: [`length-zero-no-unit`](https://stylelint.io/user-guide/rules/length-zero-no-unit/)

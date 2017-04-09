@@ -15,6 +15,8 @@
     "number-no-trailing-zeros": true,
 
     "string-no-newline": true,
-    "string-quotes": "single"
+    "string-quotes": "single",
+
+    "length-zero-no-unit": true
   }
 }
