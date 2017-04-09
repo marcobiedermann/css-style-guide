@@ -14,6 +14,7 @@ A styleguide which helps you write better, performant, structured, scalable and 
 	* [String](#string)
 	* [Length](#length)
 	* [Time](#time)
+	* [Unit](#unit)
 
 ## CSS
 
@@ -258,3 +259,25 @@ a {
 ```
 
 Stylelint: [`time-min-milliseconds`](https://stylelint.io/user-guide/rules/time-min-milliseconds/)
+
+### Unit
+
+Unit value must be written in lowercase.
+
+Bad
+
+```css
+body {
+  margin: 10PX;
+}
+```
+
+Good
+
+```css
+body {
+  margin: 10px;
+}
+```
+
+Stylelint: [`unit-case`](https://stylelint.io/user-guide/rules/unit-case/)

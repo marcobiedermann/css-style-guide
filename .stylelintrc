@@ -19,6 +19,10 @@
 
     "length-zero-no-unit": true,
 
-    "time-min-milliseconds": 100
+    "time-min-milliseconds": 100,
+
+    "unit-blacklist": [],
+    "unit-case": "lower",
+    "unit-no-unknown": true
   }
 }
