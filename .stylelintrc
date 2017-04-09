@@ -17,6 +17,8 @@
     "string-no-newline": true,
     "string-quotes": "single",
 
-    "length-zero-no-unit": true
+    "length-zero-no-unit": true,
+
+    "time-min-milliseconds": 100
   }
 }

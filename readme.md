@@ -13,6 +13,7 @@ A styleguide which helps you write better, performant, structured, scalable and 
 	* [Number](#number)
 	* [String](#string)
 	* [Length](#length)
+	* [Time](#time)
 
 ## CSS
 
@@ -235,3 +236,25 @@ body {
 ```
 
 Stylelint: [`length-zero-no-unit`](https://stylelint.io/user-guide/rules/length-zero-no-unit/)
+
+### Time
+
+Mininum number of milliseconds for time values must be at least 100.
+
+Bad
+
+```css
+a {
+  transition: color 80ms;
+}
+```
+
+Good
+
+```css
+a {
+  transition: color 100ms;
+}
+```
+
+Stylelint: [`time-min-milliseconds`](https://stylelint.io/user-guide/rules/time-min-milliseconds/)
