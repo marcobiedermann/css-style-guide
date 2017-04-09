@@ -1,0 +1,14 @@
+{
+  "name": "css-style-guide",
+  "version": "1.0.0",
+  "description": "A styleguide which helps you write better, performant, structured, scalable and maintainable CSS.",
+  "scripts": {
+    "test": "stylelint test/success/**/*.css"
+  },
+  "keywords": ["css", "style", "styleguide", "guideline", "sass", "lint"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "stylelint": "^7.10.1"
+  }
+}
