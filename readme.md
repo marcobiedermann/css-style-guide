@@ -9,6 +9,7 @@ A styleguide which helps you write better, performant, structured, scalable and 
 
 * [CSS](#css)
 	* [Color](#color)
+	* [Font](#font)
 
 ## CSS
 
@@ -77,3 +78,25 @@ body {
 ```
 
 Stylelint: [`color-named`](https://stylelint.io/user-guide/rules/color-named/)
+
+### Font
+
+Quotes are required around font-family names when they are not valid CSS identifiers.
+
+Bad
+
+```css
+body {
+  font-family: Open Sans;
+}
+```
+
+Good
+
+```css
+body {
+  font-family: 'Open Sans';
+}
+```
+
+Stylelint: [`font-family-name-quotes`](https://stylelint.io/user-guide/rules/font-family-name-quotes/)
