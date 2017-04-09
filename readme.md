@@ -11,6 +11,7 @@ A styleguide which helps you write better, performant, structured, scalable and 
 	* [Color](#color)
 	* [Font](#font)
 	* [Number](#number)
+	* [String](#string)
 
 ## CSS
 
@@ -189,3 +190,25 @@ Good
 ```
 
 Stylelint: [`number-no-trailing-zeros`](https://stylelint.io/user-guide/rules/number-no-trailing-zeros/)
+
+### String
+
+Strings must always be wrapped with single quotes.
+
+Bad
+
+```css
+.body {
+  font-family: "Open Sans";
+}
+```
+
+Good
+
+```css
+.body {
+  font-family: 'Open Sans';
+}
+```
+
+Stylelint: [`string-quotes`](https://stylelint.io/user-guide/rules/string-quotes/)

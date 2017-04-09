@@ -12,6 +12,9 @@
 
     "number-leading-zero": "always",
     "number-max-precision": 3,
-    "number-no-trailing-zeros": true
+    "number-no-trailing-zeros": true,
+
+    "string-no-newline": true,
+    "string-quotes": "single"
   }
 }
