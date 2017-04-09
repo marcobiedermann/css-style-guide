@@ -100,3 +100,25 @@ body {
 ```
 
 Stylelint: [`font-family-name-quotes`](https://stylelint.io/user-guide/rules/font-family-name-quotes/)
+
+---
+
+Bad
+
+Font-weight notation must be written in numeric value.
+
+```css
+body {
+  font-weight: bold;
+}
+```
+
+Good
+
+```css
+body {
+  font-weight: 700;
+}
+```
+
+Stylelint: [`font-weight-notation`](https://stylelint.io/user-guide/rules/font-weight-notation/)
