@@ -23,6 +23,9 @@
 
     "unit-blacklist": [],
     "unit-case": "lower",
-    "unit-no-unknown": true
+    "unit-no-unknown": true,
+
+    "value-keyword-case": "lower",
+    "value-no-vendor-prefix": true
   }
 }

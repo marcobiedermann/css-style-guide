@@ -15,6 +15,7 @@ A styleguide which helps you write better, performant, structured, scalable and 
 	* [Length](#length)
 	* [Time](#time)
 	* [Unit](#unit)
+	* [Value](#value)
 
 ## CSS
 
@@ -281,3 +282,48 @@ body {
 ```
 
 Stylelint: [`unit-case`](https://stylelint.io/user-guide/rules/unit-case/)
+
+### Value
+
+Keyword values must be written in lowercase.
+
+Bad
+
+```css
+body {
+  display: FLEX;
+}
+```
+
+Good
+
+```css
+body {
+  display: flex;
+}
+```
+
+Stylelint: [`value-keyword-case`](https://stylelint.io/user-guide/rules/value-keyword-case/)
+
+---
+
+Vender prefixes must not be used. Use [Autoprefixer](https://github.com/postcss/autoprefixer) to add them depending on browser support.
+
+Bad
+
+```css
+body {
+  display: -ms-flexbox;
+  display: flex;
+}
+```
+
+Good
+
+```css
+body {
+  display: flex;
+}
+```
+
+Stylelint: [`value-no-vendor-prefix`](https://stylelint.io/user-guide/rules/value-no-vendor-prefix/)
