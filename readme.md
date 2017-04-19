@@ -16,6 +16,7 @@ A styleguide which helps you write better, performant, structured, scalable and 
 	* [Time](#time)
 	* [Unit](#unit)
 	* [Value](#value)
+	* [Value list](#value-list)
 	* [Property](#property)
 
 ## CSS
@@ -328,6 +329,51 @@ body {
 ```
 
 Stylelint: [`value-no-vendor-prefix`](https://stylelint.io/user-guide/rules/value-no-vendor-prefix/)
+
+### Value list
+
+Values must never have space before commans and must always have space after comma.
+
+Bad
+
+```css
+body {
+  background-size: 50% ,50%;
+}
+```
+
+Good
+
+```css
+body {
+  background-size: 50%, 50%;
+}
+```
+
+Stylelint: [`value-list-comma-space-after`](https://stylelint.io/user-guide/rules/value-list-comma-space-after/), [`value-list-comma-space-before`](https://stylelint.io/user-guide/rules/value-list-comma-space-before/)
+
+---
+
+Bad
+
+Values must always be written in single line.
+
+```css
+body {
+  background-size: 50%,
+                   50%;
+}
+```
+
+Good
+
+```css
+body {
+  background-size: 50%, 50%;
+}
+```
+
+Stylelint: [`value-list-comma-newline-after`](https://stylelint.io/user-guide/rules/value-list-comma-newline-after/), [`value-list-comma-newline-before`](https://stylelint.io/user-guide/rules/value-list-comma-newline-before/), [`value-list-max-empty-lines`](https://stylelint.io/user-guide/rules/value-list-max-empty-lines/)
 
 ### Property
 
