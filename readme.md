@@ -18,6 +18,7 @@ A styleguide which helps you write better, performant, structured, scalable and 
 	* [Value](#value)
 	* [Value list](#value-list)
 	* [Property](#property)
+	* [Selector list](#selector-list)
 
 ## CSS
 
@@ -418,3 +419,26 @@ body {
 ```
 
 Stylelint: [`property-no-vendor-prefix`](https://stylelint.io/user-guide/rules/property-no-vendor-prefix/)
+
+### Selector list
+
+Each selector of a selector list must be on it's own line.
+
+Bad
+
+```css
+html ,body {
+  color: #000
+}
+```
+
+Good
+
+```css
+html,
+body {
+  color: #000
+}
+```
+
+Stylelint: [`selector-list-comma-newline-after`](https://stylelint.io/user-guide/rules/selector-list-comma-newline-after/), [`selector-list-comma-newline-before`](https://stylelint.io/user-guide/rules/selector-list-comma-newline-before/), [`selector-list-comma-space-after`](https://stylelint.io/user-guide/rules/selector-list-comma-space-after/), [`selector-list-comma-space-before`](https://stylelint.io/user-guide/rules/selector-list-comma-space-before/)
