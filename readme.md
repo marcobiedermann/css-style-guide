@@ -3,7 +3,7 @@
 
 # CSS Style Guide
 
-A styleguide which helps you write better, performant, structured, scalable and maintainable CSS.
+A style guide which helps you write better, performant, structured, scalable and maintainable CSS.
 
 ## Table of contents
 
@@ -134,7 +134,7 @@ Stylelint: [`font-weight-notation`](https://stylelint.io/user-guide/rules/font-w
 
 ### Number
 
-Number must never have a leading zero.
+Fractal number must always have a leading zero.
 
 Bad
 
