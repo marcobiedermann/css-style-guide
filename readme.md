@@ -19,6 +19,7 @@ A style guide which helps you write better, performant, structured, scalable and
 	* [Value list](#value-list)
 	* [Property](#property)
 	* [Selector list](#selector-list)
+	* [Comment](#comment)
 
 ## CSS
 
@@ -442,3 +443,25 @@ body {
 ```
 
 Stylelint: [`selector-list-comma-newline-after`](https://stylelint.io/user-guide/rules/selector-list-comma-newline-after/), [`selector-list-comma-newline-before`](https://stylelint.io/user-guide/rules/selector-list-comma-newline-before/), [`selector-list-comma-space-after`](https://stylelint.io/user-guide/rules/selector-list-comma-space-after/), [`selector-list-comma-space-before`](https://stylelint.io/user-guide/rules/selector-list-comma-space-before/)
+
+
+### Comment
+
+Comments must always have a newline before them. There must always be whitespace inside comment markers.
+
+Bad
+
+```css
+.selector { … }
+/*Comment*/
+```
+
+Good
+
+```css
+.selector { … }
+
+/* Comment */
+```
+
+Stylelint: [`comment-empty-line-before`](https://stylelint.io/user-guide/rules/comment-empty-line-before/), [`comment-whitespace-inside`](https://stylelint.io/user-guide/rules/comment-whitespace-inside/)
