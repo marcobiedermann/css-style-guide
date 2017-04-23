@@ -44,6 +44,11 @@
     "selector-list-comma-space-after": "never-single-line",
     "selector-list-comma-space-before": "never",
 
+    "media-query-list-comma-newline-after": "never-multi-line",
+    "media-query-list-comma-newline-before": "never-multi-line",
+    "media-query-list-comma-space-after": "always",
+    "media-query-list-comma-space-before": "never",
+
     "comment-empty-line-before": "always",
     "comment-no-empty": true,
     "comment-whitespace-inside": "always",

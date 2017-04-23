@@ -19,6 +19,7 @@ A style guide which helps you write better, performant, structured, scalable and
 	* [Value list](#value-list)
 	* [Property](#property)
 	* [Selector list](#selector-list)
+	* [Media query list](#media-query-list)
 	* [Comment](#comment)
 
 ## CSS
@@ -444,6 +445,28 @@ body {
 
 Stylelint: [`selector-list-comma-newline-after`](https://stylelint.io/user-guide/rules/selector-list-comma-newline-after/), [`selector-list-comma-newline-before`](https://stylelint.io/user-guide/rules/selector-list-comma-newline-before/), [`selector-list-comma-space-after`](https://stylelint.io/user-guide/rules/selector-list-comma-space-after/), [`selector-list-comma-space-before`](https://stylelint.io/user-guide/rules/selector-list-comma-space-before/)
 
+### Media query list
+
+Media query list must be single line with space required after comma.
+
+Bad
+
+```css
+@media only print ,
+       screen and (min-width: 48em) {
+  …
+}
+```
+
+Good
+
+```css
+@media only print, screen and (min-width: 48em) {
+  …
+}
+```
+
+Stylelint: [`media-query-list-comma-newline-after`](https://stylelint.io/user-guide/rules/media-query-list-comma-newline-after/), [`media-query-list-comma-newline-before`](https://stylelint.io/user-guide/rules/media-query-list-comma-newline-before/), [`media-query-list-comma-space-after`](https://stylelint.io/user-guide/rules/media-query-list-comma-space-after/), [`media-query-list-comma-space-before`](https://stylelint.io/user-guide/rules/media-query-list-comma-space-before/)
 
 ### Comment
 
