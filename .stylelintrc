@@ -34,6 +34,9 @@
     "value-list-comma-space-before": "never",
     "value-list-max-empty-lines": 0,
 
+    "custom-property-empty-line-before": "never",
+    "custom-property-pattern": "",
+
     "property-blacklist": [],
     "property-case": "lower",
     "property-no-unknown": true,
