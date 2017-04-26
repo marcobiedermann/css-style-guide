@@ -37,6 +37,8 @@
     "custom-property-empty-line-before": "never",
     "custom-property-pattern": "",
 
+    "shorthand-property-no-redundant-values": true,
+
     "property-blacklist": [],
     "property-case": "lower",
     "property-no-unknown": true,

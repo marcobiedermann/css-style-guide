@@ -17,6 +17,7 @@ A style guide which helps you write better, performant, structured, scalable and
 	* [Unit](#unit)
 	* [Value](#value)
 	* [Value list](#value-list)
+	* [Shorthand property](#shorthand-property)
 	* [Property](#property)
 	* [Selector list](#selector-list)
 	* [Media query list](#media-query-list)
@@ -377,6 +378,26 @@ body {
 ```
 
 Stylelint: [`value-list-comma-newline-after`](https://stylelint.io/user-guide/rules/value-list-comma-newline-after/), [`value-list-comma-newline-before`](https://stylelint.io/user-guide/rules/value-list-comma-newline-before/), [`value-list-max-empty-lines`](https://stylelint.io/user-guide/rules/value-list-max-empty-lines/)
+
+### Shorthand property
+
+Redundant property values must be written in shorthand notation.
+
+```css
+.selector {
+  margin: 1em 1em 1em 1em;
+}
+```
+
+Good
+
+```css
+.selector {
+  margin: 1em;
+}
+```
+
+Stylelint: [`shorthand-property-no-redundant-values`](https://stylelint.io/user-guide/rules/shorthand-property-no-redundant-values/)
 
 ### Property
 
