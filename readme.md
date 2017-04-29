@@ -19,6 +19,7 @@ A style guide which helps you write better, performant, structured, scalable and
 	* [Value list](#value-list)
 	* [Shorthand property](#shorthand-property)
 	* [Property](#property)
+	* [Declaration](#declaration)
 	* [Selector list](#selector-list)
 	* [Media query list](#media-query-list)
 	* [Comment](#comment)
@@ -442,6 +443,84 @@ body {
 ```
 
 Stylelint: [`property-no-vendor-prefix`](https://stylelint.io/user-guide/rules/property-no-vendor-prefix/)
+
+### Declaration
+
+Declaration value must have single space before `!important` keyword.
+It is recommended not using `!important` at all.
+
+Bad
+
+```css
+.selector {
+  color: #000! important;
+}
+```
+
+Good
+
+```css
+.selector {
+  color: #000 !important;
+}
+```
+
+Best
+
+```css
+.selector {
+  color: #000;
+}
+```
+
+Stylelint: [`declaration-bang-space-after`](https://stylelint.io/user-guide/rules/declaration-bang-space-after/), [`declaration-bang-space-before`](https://stylelint.io/user-guide/rules/declaration-bang-space-before/), [`declaration-no-important`](https://stylelint.io/user-guide/rules/declaration-no-important/)
+
+---
+
+Declaration requires no space before colon and single space after them.
+
+Bad
+
+```css
+.selector {
+  color :#000;
+}
+```
+
+Good
+
+```css
+.selector {
+  color: #000;
+}
+```
+
+Stylelint: [`declaration-colon-space-after`](https://stylelint.io/user-guide/rules/declaration-colon-space-after/), [`declaration-colon-space-before`](https://stylelint.io/user-guide/rules/declaration-colon-space-before/)
+
+---
+
+Declarations must not have empty lines between them.
+
+Bad
+
+```css
+.selector {
+  background-color: #fff;
+
+  color :#000;
+}
+```
+
+Good
+
+```css
+.selector {
+  background-color: #fff;
+  color: #000;
+}
+```
+
+Stylelint: [`declaration-empty-line-before`](https://stylelint.io/user-guide/rules/declaration-empty-line-before/)
 
 ### Selector list
 
