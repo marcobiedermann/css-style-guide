@@ -67,6 +67,8 @@
     "media-query-list-comma-space-after": "always",
     "media-query-list-comma-space-before": "never",
 
+    "custom-media-pattern": "",
+
     "comment-empty-line-before": "always",
     "comment-no-empty": true,
     "comment-whitespace-inside": "always",
