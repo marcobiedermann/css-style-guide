@@ -562,7 +562,7 @@ Bad
 
 ```css
 html ,body {
-  color: #000
+  color: #000;
 }
 ```
 
@@ -571,7 +571,7 @@ Good
 ```css
 html,
 body {
-  color: #000
+  color: #000;
 }
 ```
 
