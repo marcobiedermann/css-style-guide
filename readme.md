@@ -21,6 +21,7 @@ A style guide which helps you write better, performant, structured, scalable and
 	* [Property](#property)
 	* [Declaration](#declaration)
 	* [Selector list](#selector-list)
+	* [Rule](#rule)
 	* [Media query list](#media-query-list)
 	* [Comment](#comment)
 
@@ -544,6 +545,35 @@ body {
 ```
 
 Stylelint: [`selector-list-comma-newline-after`](https://stylelint.io/user-guide/rules/selector-list-comma-newline-after/), [`selector-list-comma-newline-before`](https://stylelint.io/user-guide/rules/selector-list-comma-newline-before/), [`selector-list-comma-space-after`](https://stylelint.io/user-guide/rules/selector-list-comma-space-after/), [`selector-list-comma-space-before`](https://stylelint.io/user-guide/rules/selector-list-comma-space-before/)
+
+### Rule
+
+Rules must be separated by empty line.
+
+Bad
+
+```css
+a {
+  …
+}
+b {
+  …
+}
+```
+
+Good
+
+```css
+a {
+  …
+}
+
+b {
+  …
+}
+```
+
+Stylelint: [`rule-empty-line-before`](https://stylelint.io/user-guide/rules/rule-empty-line-before/)
 
 ### Media query list
 
