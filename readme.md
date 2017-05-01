@@ -19,6 +19,7 @@ A style guide which helps you write better, performant, structured, scalable and
 	* [Value list](#value-list)
 	* [Shorthand property](#shorthand-property)
 	* [Property](#property)
+	* [Keyframe declaration](#keyframe-declaration)
 	* [Declaration](#declaration)
 	* [Selector list](#selector-list)
 	* [Rule](#rule)
@@ -444,6 +445,36 @@ body {
 ```
 
 Stylelint: [`property-no-vendor-prefix`](https://stylelint.io/user-guide/rules/property-no-vendor-prefix/)
+
+### Keyframe declaration
+
+Keyframe declaration must not have `!important`.
+
+Bad
+
+```css
+@keyframes animation {
+
+  100% {
+    opacity: 1 !important;
+  }
+
+}
+```
+
+Good
+
+```css
+@keyframes animation {
+
+  100% {
+    opacity: 1;
+  }
+
+}
+```
+
+Stylelint: [`keyframe-declaration-no-important`](https://stylelint.io/user-guide/rules/keyframe-declaration-no-important/)
 
 ### Declaration
 
