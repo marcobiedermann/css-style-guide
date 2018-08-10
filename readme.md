@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/marcobiedermann/css-style-guide.svg?branch=master)](https://travis-ci.org/marcobiedermann/css-style-guide)
-[![devDependency Status](https://david-dm.org/marcobiedermann/css-style-guide/dev-status.svg)](https://david-dm.org/marcobiedermann/css-style-guide#info=devDependencies)
+[![devDependency Status](https://david-dm.org/marcobiedermann/css-style-guide/dev-status.svg)](https://david-dm.org/marcobiedermann/css-style-guide#info=devDependencies) [![Greenkeeper badge](https://badges.greenkeeper.io/marcobiedermann/css-style-guide.svg?token=bd343a3513590c2842ec6375d272a6ce65b3f159ada50c92674eb2f85fd8949d&ts=1533884470497)](https://greenkeeper.io/)
 
 # CSS Style Guide
 
