@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "stylelint": "^7.10.1"
+    "stylelint": "^9.4.0"
   }
 }
